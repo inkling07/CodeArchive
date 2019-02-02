@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // Il modello di elemento Pagina vuota è documentato all'indirizzo https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x410
@@ -43,15 +44,17 @@ namespace CodeArchive
                     time1.Interval = new TimeSpan(0, 0, 0, 0, 50);
                     time1.Tick += timestart;
                     Progress.IsEnabled = true;
-                    
-            }
+                this.Frame.Navigate(typeof(Home), null, new EntranceNavigationTransitionInfo());
+
+                }
         }
 
         private void timestart(object sender, object e)
         {
             x += 1;
 
-            if (x >= Progress.Maximum) this.Frame.Navigate(typeof(Home));
+            if (x >= Progress.Maximum) ;
+             //   this.Frame.Navigate(typeof(Home), null, new EntranceNavigationTransitionInfo());
         }
         }
     }
