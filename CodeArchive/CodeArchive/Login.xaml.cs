@@ -28,7 +28,9 @@ namespace CodeArchive
         public MainPage()
         {
             this.InitializeComponent();
-            Progress.IsIndeterminate = false;
+            Progress.IsIndeterminate = true;
+            Progress.IsEnabled = false;
+            
         }
 
         private void login(object sender, RoutedEventArgs e)
@@ -40,7 +42,7 @@ namespace CodeArchive
                     time1.Start();
                     time1.Interval = new TimeSpan(0, 0, 0, 0, 50);
                     time1.Tick += timestart;
-                    Progress.IsIndeterminate = true;
+                    Progress.IsEnabled = true;
                     
             }
         }
@@ -48,8 +50,9 @@ namespace CodeArchive
         private void timestart(object sender, object e)
         {
             x += 1;
-            
+
             if (x >= Progress.Maximum) this.Frame.Navigate(typeof(Home));
         }
+        }
     }
-}
+

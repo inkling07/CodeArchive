@@ -26,5 +26,10 @@ namespace CodeArchive
         {
             this.InitializeComponent();
         }
+
+        private void add1(object sender, TappedRoutedEventArgs e)
+        {
+            
+        }
     }
 }
