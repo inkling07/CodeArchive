@@ -9,26 +9,21 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+       
+       
         <NavigationView x:Name="HomeBar">
-            
             <NavigationView.MenuItems>
-                <NavigationViewItem Icon="People" Content="ciao" />
-                <NavigationViewItem Icon="Add"/>
-
+                
             </NavigationView.MenuItems>
-            <Pivot Title="Pivot">
-                <PivotItem Header="Dog">
-                    <Button Content="Button" HorizontalAlignment="Left" Margin="408,250,0,0" VerticalAlignment="Top"/>
-                </PivotItem>
-                <PivotItem Header="PivotItem 1">
-                    <Button Content="Login" HorizontalAlignment="Left" Margin="408,250,0,0" VerticalAlignment="Top"/>
-
-                </PivotItem>
+            <Pivot Title="">
+                <PivotItem Header="" Margin="10,0,12,0"/>
+                <PivotItem Header=""/>
             </Pivot>
+
         </NavigationView>
-        
-        
-        
+
+
+
 
 
     </Grid>
