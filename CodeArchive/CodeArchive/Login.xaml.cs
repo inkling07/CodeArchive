@@ -56,6 +56,11 @@ namespace CodeArchive
             if (x >= Progress.Maximum) ;
              //   this.Frame.Navigate(typeof(Home), null, new EntranceNavigationTransitionInfo());
         }
+
+        private void check1(object sender, RoutedEventArgs e)
+        {
+
         }
+    }
     }
 

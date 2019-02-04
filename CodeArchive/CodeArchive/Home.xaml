@@ -8,23 +8,26 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-       
-       
-        <NavigationView x:Name="HomeBar">
-            <NavigationView.MenuItems>
-                
-            </NavigationView.MenuItems>
-            <Pivot Title="">
-                <PivotItem Header="" Margin="10,0,12,0"/>
-                <PivotItem Header=""/>
-            </Pivot>
-
-        </NavigationView>
+    <NavigationView>
+        <NavigationView.MenuItems>
+            <NavigationViewItem Content="Input di testo" Tapped="page2">
+                <NavigationViewItem.Icon>
+                    <SymbolIcon Symbol="Keyboard"/>
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+            <NavigationViewItem Content="Account" IsSelected="True" Tapped="tap1">
+                <NavigationViewItem.Icon>
+                    <SymbolIcon Symbol="Contact"/>
+                </NavigationViewItem.Icon>
 
 
 
+            </NavigationViewItem>
+        </NavigationView.MenuItems>
+        <NavigationView.PaneHeader>
+            <Image Source="/Assets/icons8-abc-480.png"/>
+        </NavigationView.PaneHeader>
+        <Frame x:Name="myFrame"/>
+    </NavigationView>
 
-
-    </Grid>
 </Page>

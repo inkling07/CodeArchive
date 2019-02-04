@@ -11,7 +11,6 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // Il modello di elemento Pagina vuota è documentato all'indirizzo https://go.microsoft.com/fwlink/?LinkId=234238
@@ -21,22 +20,11 @@ namespace CodeArchive
     /// <summary>
     /// Pagina vuota che può essere usata autonomamente oppure per l'esplorazione all'interno di un frame.
     /// </summary>
-    public sealed partial class Home : Page
+    public sealed partial class BlankPage2 : Page
     {
-        public Home()
+        public BlankPage2()
         {
             this.InitializeComponent();
         }
-
-        private void tap1(object sender, TappedRoutedEventArgs e)
-        {
-            myFrame.Navigate(typeof(BlankPage1), null, new EntranceNavigationTransitionInfo());
-        }
-
-        private void page2(object sender, TappedRoutedEventArgs e)
-        {
-            myFrame.Navigate(typeof(BlankPage2));
-        }
     }
-    }
-
+}
